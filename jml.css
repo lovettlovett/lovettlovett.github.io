@@ -1,0 +1,265 @@
+body {
+	background-color: #eeeeee;
+}
+
+a {
+	text-decoration: none;
+	color: #464646;
+}
+
+a:hover{
+	color: purple;
+}
+
+#main_container {
+	width: 100%;
+	margin: 0 auto;
+}
+
+.centered-container{
+	display: inline-block;
+	margin: 100px auto;
+	width: 100%;
+	text-align: center;
+}
+
+.circle-spacer{
+	width: 50px;
+	display: inline-block;
+}
+
+.circle{
+	border-radius: 100%;
+	width: 200px;
+	height: 200px;
+	background-color: #464646;
+	display: inline-block;
+	vertical-align: middle;
+}
+
+#super-circle{
+	width: 300px;
+	height: 300px;
+}
+
+h1{
+	/*font-family:helvetica;*/
+	font-family: 'Oswald', sans-serif;
+	font-size:120px;
+	color: #ffffff;
+	line-height: 10px;
+	padding-top: 60px;
+}
+
+h2{
+	padding-top: 50px;
+	/*font-family:helvetica;*/
+	font-family: 'Oswald', sans-serif;
+	font-size:30px;
+	color: #ffffff;
+}
+
+h3{
+	padding: 25px 0px 0px 0px;
+	font-size:40px;
+}
+
+.little-back-text{
+	font-size:24px;
+	color: #464646;
+	font-family: 'Oswald', sans-serif;
+	padding-top: 60px;
+}
+
+#back-text{
+	font-family: 'Oswald', sans-serif;
+	font-size:20px;
+	line-height: 28px;
+	text-align: middle;
+}
+
+.flip {
+  -webkit-perspective: 800;
+   width: 300px;
+   height: 300px;
+   display: inline-block;
+    /*position: relative;*/
+    margin: 0 auto;
+}
+.flip .card.flipped {
+  -webkit-transform: rotateX(-180deg);
+}
+.flip .card {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.flip .card .face {
+  width: 100%;
+  height: 100%;
+  /*position: absolute;*/
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+    text-align: center;
+    line-height: 200px;
+}
+.flip .card .front {
+  position: absolute;
+  z-index: 1;
+    background: #464646;
+    color: #ffffff;
+    cursor: pointer;
+}
+.flip .card .back {
+  -webkit-transform: rotateX(-180deg);
+    background: #eeeeee;
+    border-width: 8px;
+    border-style:solid;
+    border-color: #464646;
+    color: #464646;
+    cursor: pointer;
+}
+
+/* mini section */
+.miniflip {
+  -webkit-perspective: 800;
+   width: 200px;
+   height: 200px;
+   display: inline-block;
+    /*position: relative;*/
+    margin: 50px auto;
+}
+.miniflip .minicard.miniflipped {
+  -webkit-transform: rotateX(-180deg);
+}
+.miniflip .minicard {
+  width: 100%;
+  height: 100%;
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+}
+.miniflip .minicard .miniface {
+  width: 100%;
+  height: 100%;
+  /*position: absolute;*/
+  -webkit-backface-visibility: hidden ;
+  z-index: 2;
+    text-align: center;
+    /*line-height: 200px;*/
+}
+.miniflip .minicard .minifront {
+  position: absolute;
+  z-index: 1;
+    background: #464646;
+    color: #ffffff;
+    cursor: pointer;
+}
+.miniflip .minicard .miniback {
+  -webkit-transform: rotateX(-180deg);
+    background: #eeeeee;
+    border-width: 8px;
+    border-style:solid;
+    border-color: #464646;
+    color: #464646;
+
+    cursor: pointer;
+}
+
+
+
+
+/* Just click to select the code */
+ 
+/* Just click to select the code */
+ 
+@charset "UTF-8";
+ 
+@font-face {
+  font-family: "untitled-font-1";
+  src:url("fonts/untitled-font-1.eot");
+  src:url("fonts/untitled-font-1.eot?#iefix") format("embedded-opentype"),
+    url("fonts/untitled-font-1.ttf") format("truetype"),
+    url("fonts/untitled-font-1.svg#untitled-font-1") format("svg"),
+    url("fonts/untitled-font-1.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+ 
+[data-icon]:before {
+  font-family: "untitled-font-1" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+ 
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-1" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+} 
+ 
+.icon-fontawesome-webfont:before {
+   content: "a"; 
+} 
+ 
+.icon-fontawesome-webfont-1:before {
+   content: "b"; 
+} 
+ 
+.icon-fontawesome-webfont-2:before {
+   content: "c"; 
+} 
+ 
+.icon-fontawesome-webfont-3:before {
+   content: "d"; 
+} 
+ 
+.icon-fontawesome-webfont-4:before {
+   content: "e"; 
+} 
+ 
+.icon-fontawesome-webfont-5:before {
+   content: "f"; 
+} 
+ 
+.icon-fontawesome-webfont-6:before {
+   content: "g"; 
+} 
+ 
+.icon-mobile:before {
+   content: "h"; 
+} 
+ 
+.icon-chef-food-restaurant-streamline:before {
+   content: "i"; 
+}
+
+.icon-fontawesome-webfont-3 {
+	display: inline-block;
+}
+
+.icon-fontawesome-webfont-4 {
+	display: inline-block;
+}
+
+.icon-fontawesome-webfont-5 {
+	display: inline-block;
+}
+
+.icon-fontawesome-webfont-2 {
+	display: inline-block;
+}
